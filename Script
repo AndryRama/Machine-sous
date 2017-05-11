@@ -69,6 +69,12 @@ function machineASous(){
 	if(creditJoueur > highscore){
 		highscore = creditJoueur;
 	}
+    
+    if(creditJoueur <= 0){
+        $("button[id='spin']").attr("disabled", "disabled")
+       
+
+    }
 
 	document.getElementById("credit").value = creditJoueur;
 	document.getElementById("highscore").value = highscore;
