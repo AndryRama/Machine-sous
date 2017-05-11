@@ -62,12 +62,11 @@ function machineASous(){
 		creditJoueur += 5;
        
 	}
-	/* Si l'utilisateur a un crédit plus élevé que son highscore, alors le highscore
-	prend la valeur du crédit */
+
 	if(creditJoueur > highscore){
 		highscore = creditJoueur;
 	}
-	/* On met à jour le crédit et le highscore du joueur */
+
 	document.getElementById("credit").value = creditJoueur;
 	document.getElementById("highscore").value = highscore;
 
