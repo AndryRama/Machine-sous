@@ -1,4 +1,5 @@
 
+
 var historique = JSON.parse(localStorage.getItem("historique") || "[]");
 console.log(historique);
 function machineASous(){
@@ -53,16 +54,18 @@ function machineASous(){
 	   creditJoueur+= 11;
 	}else 
 	// 3 signes égaux
-	if(w == x && x == y ){
+	if(w == x && x == y || w == x && x == z || x == y && y == z|| y == z && z == w){
 		creditJoueur += 6;
 	}else 
 	
 	// 2 signes égaux
-	if(w == x ^ w == y ^ x == y){
-		creditJoueur += 5;
+	if(w == x || w == y || w == z || x == y || x == z || y == z){
+		creditJoueur += 1;
        
-	}
-
+	}else
+    
+    if(w != x && w != y && w != z && x != y && x != z && y != z)
+        creditJoueur -= 10
 	if(creditJoueur > highscore){
 		highscore = creditJoueur;
 	}
