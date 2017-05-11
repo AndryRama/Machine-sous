@@ -1,7 +1,3 @@
-# Machine-sous
-Création d'une machine à sous
-
-
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
@@ -34,9 +30,9 @@ Création d'une machine à sous
 		
 		<button class="exercice" onclick="machineASous();" id="spin">GO !</button><br />
 		
-		<p>Votre crédit est de </p><input id="credit" type="text" value="20" disabled="disabled"><br /><p>Votre highscore est de :</p><input id="highscore" type="text" value="20" disabled="disabled">
+		<p>Votre crédit est de </p><input id="credit" type="text" value="20" disabled="disabled"><br /><p>Votre meilleur score est de :</p><input id="highscore" type="text" value="20" disabled="disabled">
 		
-		<p>Données</p><input id="credit" type="text" value=""  disabled="disabled"><br /><p>Vos données :</p><input id="highscore" type="text" value="" disabled="disabled">
+		
      </div>   
      <br><br><br>
 	<div class="footer"></div>
