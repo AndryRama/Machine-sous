@@ -78,7 +78,7 @@ function machineASous(){
     
     if(w != x && w != y && w != z && x != y && x != z && y != z){
         creditJoueur -= 10
-    }else
+    }
         
 
 	if(creditJoueur > highscore){
