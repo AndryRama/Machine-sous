@@ -72,7 +72,7 @@ function machineASous(){
 	
 	// 2 signes égaux
 	if(w == x || w == y || w == z || x == y || x == z || y == z){
-		creditJoueur += 1;
+		creditJoueur += 0;
        
 	}else
     
@@ -80,11 +80,6 @@ function machineASous(){
         creditJoueur -= 10
     }else
         
-      if(creditJoueur <= 0){
-        $("button[id='spin']").attr("disabled", "disabled")
-       alert('Plus de crédits');
-
-    }
 
 	if(creditJoueur > highscore){
 		highscore = creditJoueur;
